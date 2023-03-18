@@ -23,3 +23,9 @@ resource "aws_s3_bucket_versioning" "versioning_example" {
     status = var.versioning
   }
 }
+
+# VPC section
+# Create a VPC
+resource "aws_vpc" "example" {
+  cidr_block = "10.0.0.0/16"
+}
